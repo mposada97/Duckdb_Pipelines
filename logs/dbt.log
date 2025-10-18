@@ -1,0 +1,30 @@
+[0m14:23:47.207748 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E46235F8C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E4603AC410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E464707C50>]}
+
+
+============================== 14:23:47.218784 | 0e63e685-7238-4cc1-ba1d-b94d73348e7b ==============================
+[0m14:23:47.218784 [info ] [MainThread]: Running with dbt=1.10.13
+[0m14:23:47.219424 [debug] [MainThread]: running dbt with arguments {'cache_selected_only': 'False', 'use_colors': 'True', 'target_path': 'None', 'no_print': 'None', 'log_format': 'default', 'warn_error': 'None', 'log_path': 'logs', 'partial_parse': 'True', 'fail_fast': 'False', 'send_anonymous_usage_stats': 'True', 'indirect_selection': 'eager', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'version_check': 'True', 'use_experimental_parser': 'False', 'quiet': 'False', 'introspect': 'True', 'empty': 'None', 'log_cache_events': 'False', 'debug': 'False', 'profiles_dir': 'C:\\Users\\mateo\\.dbt', 'invocation_command': 'dbt init dbt_transformations', 'printer_width': '80', 'write_json': 'True'}
+[0m14:23:47.229439 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\mateo\.dbt
+[0m14:23:47.231062 [debug] [MainThread]: Starter project path: C:\Users\mateo\Desktop\DataEngineeringProjects\DuckdbChessPipeline\myenv\Lib\site-packages\dbt\include\starter_project
+[0m14:23:47.244370 [info ] [MainThread]: 
+Your new dbt project "dbt_transformations" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m14:23:47.245591 [info ] [MainThread]: Setting up your profile.
+[0m14:23:53.207792 [info ] [MainThread]: Profile dbt_transformations written to C:\Users\mateo\.dbt\profiles.yml using target's sample configuration. Once updated, you'll be able to start developing with dbt.
+[0m14:23:53.208889 [debug] [MainThread]: Command `dbt init` succeeded at 14:23:53.208792 after 6.11 seconds
+[0m14:23:53.209138 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E46488EC40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E4648C9490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E4608EDD00>]}
+[0m14:23:53.209430 [debug] [MainThread]: Flushing usage events
+[0m14:23:53.648286 [debug] [MainThread]: An error was encountered while trying to flush usage events

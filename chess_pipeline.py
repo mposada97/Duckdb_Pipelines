@@ -18,5 +18,5 @@ data = source(
 )
 
 
-info = pipeline.run((data.with_resources("players_profiles", "players_games"))
+info = pipeline.run(data.with_resources("players_profiles", "players_games"))
 print(info)
