@@ -13,7 +13,7 @@ WITH noWinLoss AS (
 )
 
 SELECT * REPLACE (
-    cast(strptime(tourney_date, '%Y%m%d') AS date) as tourney_date
+    cast(strptime(CAST(tourney_date AS VARCHAR), '%Y%m%d') AS date) as tourney_date
 )
 FROM noWinLoss -- this grabs all columns from out noWinLoss CTE but it replaces the tourney_date by our formatted tourney_date in place
 
