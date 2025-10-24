@@ -2,20 +2,23 @@
 version: 2
 
 models:
-  - name: my_first_dbt_model
-    description: "A starter dbt model"
+  - name: matches
+    description: "ATP tennis matches schema"
     columns:
-      - name: id
-        description: "The primary key for this table"
+      - name: tourney_id
+        description: "The ID of the tournament."
         data_tests:
-          - unique
           - not_null
-
-  - name: my_second_dbt_model
-    description: "A starter dbt model"
-    columns:
-      - name: id
-        description: "The primary key for this table"
+      - name: winner_id
+        description: "The ID of the winning player."
         data_tests:
-          - unique
           - not_null
+      - name: loser_id
+        description: "The ID of the losing player."
+        data_tests:
+          - not_null
+      - name: surface
+        description: "The surface of the court."
+        data_tests:
+          - accepted_values:
+              values: ['Grass', 'Hard', 'Clay']
